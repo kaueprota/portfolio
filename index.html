@@ -3,19 +3,32 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
-    <title>Documen</title>
-    <link rel="stylesheet" href="style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.5, user-scalable=no">
+    <script src="https://kit.fontawesome.com/1008e426eb.js" crossorigin="anonymous"></script>
+    <title>Document</title>
+    <link rel="stylesheet" href="centerstyle.css">
 </head>
 <body>
-    <nav> 
-        <ul class="menu_desktop">
+    <nav id="nav"> 
+        <ul id="menu_desktop">
             <li><a href="#" style="color:#243ECB;">Projects</a></li>
             <li><a href="#">Habilits</a></li>
             <li><a href="#">Experiences</a></li>
             <li><a href="#">About me</a></li>
         </ul>
+
+        <ul id="menu_mobile">
+            <div class="img_menu"><i class="fa-solid fa-bars"></i></div>
+           
+            <div class="opcoes">
+                <li><a href="#" style="color:#243ECB;">Projects</a></li>
+                <li><a href="#">Habilits</a></li>
+                <li><a href="#">Experiences</a></li>
+                <li><a href="#">About me</a></li>
+            </div><!--OPCOES-->
+        </ul>
     </nav>
+    <div class="img_menu_2"><i class="fa-solid fa-bars"></i></div>
     <header>
         <div class="titulo">
             <h2>Kauê Prota</h2>
@@ -52,10 +65,6 @@
     </a>
         <div class="container_projects">
 
-<!--
-            <div class="slide_bar"></div>
-            <div class="ball_slide"></div>
--->
             <div class="box_title">
                 <h2>Projects</h2>
                 <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Porro officia dolores consequatur aliquid, odit voluptatem a maiores rem mollitia sed, dicta libero? Officia ab similique deleniti neque, architecto consectetur sapiente!
@@ -95,5 +104,7 @@
             <p>IDIOMAS: inglês (básico)</p>
         </div>
     </div><!--habilits-->
+
+    <script src="script.js"></script>
 </body>
 </html>
