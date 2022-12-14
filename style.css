@@ -18,7 +18,6 @@ body{
 nav{
     position: absolute;
     width: 100vw;
-    margin-top: 20px;
     display: flex;
     justify-content: space-evenly;
     background-color: transparent;
@@ -37,6 +36,7 @@ nav ul li{
     font-style: normal;
     font-size: 20px;
     background-color: transparent;
+    overflow: hidden;
 }
 
 nav ul li a{
@@ -51,66 +51,89 @@ nav ul li a:hover{
 }
 
 header{
-    width: 100%;
+    height: 85vh;
+    width: 100vw;
+    position: relative;
+    z-index: 1;
     
 }
 
-header .container{
-    height: 92vh;
-    width: 100vw;
+/*NAV MOBILE*/
+.menu_mobile{
+    display: none !important;
+    position: fixed;
+    background-color: white;
+    height: 100vh;
+    left: -100%;
+    width: 33vw;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+    padding-left: 11px;
+    transition: cubic-bezier(0.19, 1, 0.22, 1);
 }
 
-/*NAV MOBILE*/
-#menu_mobile{
-    display: none;
-    position: relative; 
+.menu_mobile_toggle{
+    left: 1px;
+}
+
+#menu_desktop{
+    margin-top: 20px;
 }
 
 .img_menu{
-    width: 100%;
     font-size: 35px;
     text-align: right;
     cursor: pointer;
-    color:rgba(103, 12, 174, 0.91)
+    color: rgba(103, 12, 174, 0.91);
+    padding: 16px 25px 0px 0px;
+    height: 60px;
+    overflow: hidden;
+    z-index: 99;
 }
 
 .img_menu_2{
     display: none;
-    width: 100%;
-    font-size: 35px;
+    font-size: 52px;
     text-align: left;
     cursor: pointer;
     padding: 10px;
-    margin-top: 15px;
+    margin-top: 6px;
     position: absolute;
-    margin-left: 5%;
+    margin-left: 3%;
     color: rgba(103, 12, 174, 0.91);
+    z-index: 99;
 }
 
 
 .opcoes{
     display: flex;
     flex-direction: column;
+    width: 100%;
+    min-height: 82vh;
+    justify-content: space-around;
 }
 /*---------------------*/
 
 .img_person{
-    width: 100%;
+    width: 50%;
     height: 100%;
+    position: relative;
+    z-index: 1;
     float: right;
 }
 
-header .container .img{
+header .img{
     background-image: url(./Imagens/SAVE_20200922_014906-01.jpg);
-    width: 60%;
+    width: 100%;
     height: 100%;
-    float: right;
     background-repeat: no-repeat;
     background-size: cover;
-    background-position: 100% 40%;
     position: relative;
+    background-position: center;
     z-index: 1;
-   /* left: 80px; */
 }
 
 .titulo{
@@ -148,15 +171,17 @@ header .container .img{
 .projects{
     background-color: rgba(18, 18, 18, 1);
     width: 100vw;
-    height:512.5px;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
 }
 
 
 .container_projects .box_title{
-    float: right;
     color: white;
-    width: 50%;
-    padding: 27px 60px 20px 20px;
+    width: 80%;
+    padding: 27px 0px 20px 20px;
     display: flex;
     background-color: transparent;
     flex-direction: column;
@@ -176,25 +201,21 @@ header .container .img{
 }
 
 .container_projects .box_title p{
-    color: white;
+    color: #dddddd;
     background-color: transparent;
+    font-size: 17px;
 }
 
 .box_projects{
-    width: 45%;
-    height: 690px;
+    width: 49%;
     background-color: transparent;
-    float: left;
-    position: absolute;
-    z-index: 98;
-    top: 390px;
-    padding-top: 30px;
+    position: relative;
     text-align: center;
 }
 
 .box_projects .project1{
     width: 70%;
-    height: 65%;
+    height: 72%;
     display: inline-block;
     border-radius: 40px;
     cursor: pointer;
@@ -251,7 +272,7 @@ header .container .img{
 
 .box_projects .project2{
     width: 70%;
-    height: 65%;
+    height: 72%;
     border-radius: 40px;
     cursor: pointer;
     filter: drop-shadow(3px 4px 39px rgba(255, 255, 255, 0.25));
@@ -261,7 +282,7 @@ header .container .img{
 
 .project3{
     width: 70%;
-    height: 65%;
+    height: 72%;
     border-radius: 40px;
     cursor: pointer;
     filter: drop-shadow(3px 4px 39px rgba(255, 255, 255, 0.25));
@@ -271,7 +292,7 @@ header .container .img{
 
 .project4{
     width: 70%;
-    height: 65%;
+    height: 72%;
     border-radius: 40px;
     cursor: pointer;
     filter: drop-shadow(3px 4px 39px rgba(255, 255, 255, 0.25));
@@ -280,7 +301,13 @@ header .container .img{
 }
 
 .container_projects{
-    position: relative;
+    width: 63%;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-items: center;
+    padding-bottom: 49px;
+    padding-top: 3px;
 }
 
 a .img_projects{
@@ -290,14 +317,29 @@ a .img_projects{
     display: flex;
     align-content: center;
     margin-top: 30px;
+    align-items: center;
 }
 
 a .img_projects .img_git{
     background-image: url(./Imagens/25231.png);
     background-size: contain;
     width: 100%;
+    background-position: center;
     height: 100%;
     background-color: transparent;
+    cursor: pointer;
+    filter: drop-shadow(2px 4px 6px black);
+    background-repeat: no-repeat;
+    margin-right: 5px;
+}
+
+a .img_projects .img_hackerhank{
+    background-image: url(./Imagens/HackerRank_logo.png);
+    background-size: 110px;
+    width: 100%;
+    height: 100%;
+    background-color: transparent;
+    background-position: center;
     cursor: pointer;
     filter: drop-shadow(2px 4px 6px black);
     background-repeat: no-repeat;
@@ -306,6 +348,10 @@ a .img_projects .img_git{
 a .img_projects .img_git:hover{
     filter: brightness(0.5);
 
+}
+
+a .img_projects .img_hackerhank:hover{
+    filter: brightness(0.5);
 }
 
 .box_projects::-webkit-scrollbar{
@@ -340,7 +386,7 @@ a .img_projects .img_git:hover{
 /*scrollbar da página */
 
 ::-webkit-scrollbar{
-    width: 10px;
+    width: 8px;
 }
 
 ::-webkit-scrollbar-thumb{
@@ -364,22 +410,23 @@ a .img_projects .img_git:hover{
 .habilits{
     background-color: #B3B3B3;
     width: 100vw;
-    height: 1000px;
+    height: 100%;
     display: flex;
 }
 
 .progress{
     display: flex;
     width: 50%;
+    padding: 44px 0px 28px 0px;
     flex-direction: column;
     flex-wrap: nowrap;
     align-items: center;
 }
 
 .habilit_text{
-    width: 50%;
-    padding: 30px 68px 20px 9px;
-    float: right;
+    width: 43%;
+    padding: 27px 0px 20px 20px;
+    float: right; 
     text-align: center;
 }
 
@@ -401,34 +448,50 @@ a .img_projects .img_git:hover{
     text-align: initial;
 }
 
-.html{
+.container_slide{
     width: 100%;
-    height: 100%;
+    height: 75px;
     display: flex;
-    padding: 40px 99px 0px 72px;
+    padding: 0px 106px 1px 83px;
     flex-direction: column;
 }
 
 .progress_1{
     width: 100%;
-    height: 20px;
+    height: 35px;
     background: rgb(36,62,203);
-    background: linear-gradient(267deg, rgba(36,62,203,1) 0%, rgba(103,12,174,1) 91%);
+    background: black;
     border-radius: 30px;
     overflow: hidden;
-    box-shadow: inset -200px 0px 1px 0px rgb(0, 0, 0);
+    display: flex;
+    align-content: center;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 15px;
+    position: relative;
+}
+
+.progress_2{
+    position: absolute;
+    width: 50%;
+    background: linear-gradient(267deg, rgba(36,62,203,1) 0%, rgba(103,12,174,1) 91%);
+    height: 35px;
+    border-radius: 30px;
+    left: 0;
+    display: flex;
+    padding-left: 15px;
+    align-content: center;
+    justify-content: flex-start;
+    align-items: center;
 }
 
 .progress_1 p{
-
     font-family: 'Montserrat';
-    font-style: normal;
-    font-weight: 700;
-    font-size: 20px;
+    font-style: italic;
+    font-size: 14px;
     line-height: 24px;
     color: #ffffff;
     margin-right: 15px;
-    text-align: end;
 }
 
 .title_progress{
@@ -441,3 +504,70 @@ a .img_projects .img_git:hover{
     color: #000000;
 
 }
+
+/*EXPERIENCES*/
+.experiences{
+    background-color:#B3B3B3;
+    width: 100vw;
+    height: 100%; 
+    display: flex;
+    padding: 34px;
+}
+
+.works{
+    width: 50%;
+    padding: 50px;
+}
+
+.experiences h2{
+    margin-bottom: 18px
+}
+
+.academic{
+    width: 50%;
+    padding: 50px;
+}
+
+.academic p{
+    padding-bottom: 10px
+}
+
+
+/*ABOUT ME*/
+
+.aboutMe{
+    height: 100%;
+    width: 100vw;
+    background-color: rgba(18, 18, 18, 1);
+    color:rgba(255, 255, 255, 1);
+    text-align: center;
+    padding: 45px;
+}
+
+.aboutMe h2{
+    font-size: 40px;
+    padding-bottom: 10px;
+}
+
+.aboutMe p{
+    padding: 0px 76px 0px 76px;
+    font-size: 17px;
+}
+
+footer{
+    background:  linear-gradient(270.18deg, #670CAE 24.48%, #243ECB 91.11%);
+    width: 100vw;
+    color: white;
+    display: flex;
+    padding: 25px;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-content: center;
+    align-items: center;
+    justify-content: space-around;
+}
+
+footer p{
+    font-size: 17px
+}
+
