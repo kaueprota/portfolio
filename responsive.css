@@ -42,6 +42,7 @@
 
     .habilit_text {
         width: 80%;
+        padding: 59px 0px 37px 0px !important; 
     }
 
     .progress {
@@ -115,7 +116,7 @@
 
     .box_projects {
         width: 100vw;
-        height: 400px;
+        height: 545px;
     }
 
     .container_projects {
@@ -152,6 +153,11 @@
         font-size: 14px;
     }
 
+    .habilit_text {
+        float: none !important;
+        text-align: center;
+    }
+
 }
 
 @media screen and (max-width:450px){
@@ -162,6 +168,15 @@
     .menu_mobile {
         width: 47vw;
     } 
+
+    .container_projects {
+        padding-bottom: 65px;
+    }
+
+    .container_projects .box_title {
+        padding: 64px 0px 0px 0px !important;
+    }
+
 
 
 }

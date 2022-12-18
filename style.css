@@ -144,7 +144,7 @@ header .img{
     background-color: transparent;
     z-index: 2;
     margin-top: 260px;
-    margin-left: 120px;
+    margin-left: 114px;
 
 }
 
@@ -180,8 +180,8 @@ header .img{
 
 .container_projects .box_title{
     color: white;
-    width: 80%;
-    padding: 27px 0px 20px 20px;
+    width: 74%;
+    padding: 111px 0px 78px 0px;
     display: flex;
     background-color: transparent;
     flex-direction: column;
@@ -194,7 +194,7 @@ header .img{
     font-style: italic;
     font-weight: 700;
     font-size: 64px;
-    line-height: 90px;
+    line-height: 94px;
     text-align: center;
     background-color: transparent;
     color: #FFFFFF;
@@ -207,7 +207,7 @@ header .img{
 }
 
 .box_projects{
-    width: 49%;
+    width: 50%;
     background-color: transparent;
     position: relative;
     text-align: center;
@@ -301,28 +301,34 @@ header .img{
 }
 
 .container_projects{
-    width: 63%;
+    width: 50%;
     display: flex;
     flex-direction: column;
     flex-wrap: nowrap;
     align-items: center;
-    padding-bottom: 49px;
+    padding-bottom: 87px;
     padding-top: 3px;
 }
 
-a .img_projects{
-    width: 159px;
+.img_projects{
+    width: 227px;
     height: 150px;
     background-color: transparent;
     display: flex;
     align-content: center;
     margin-top: 30px;
     align-items: center;
+    justify-content: space-between;
 }
 
-a .img_projects .img_git{
+.img_projects a{
+    width: 50%;
+    height: 100%;
+}
+
+.img_git{
     background-image: url(./Imagens/25231.png);
-    background-size: contain;
+    background-size: 83px;
     width: 100%;
     background-position: center;
     height: 100%;
@@ -333,9 +339,9 @@ a .img_projects .img_git{
     margin-right: 5px;
 }
 
-a .img_projects .img_hackerhank{
+.img_hackerhank{
     background-image: url(./Imagens/HackerRank_logo.png);
-    background-size: 110px;
+    background-size: 121px;
     width: 100%;
     height: 100%;
     background-color: transparent;
@@ -345,12 +351,12 @@ a .img_projects .img_hackerhank{
     background-repeat: no-repeat;
 }
 
-a .img_projects .img_git:hover{
+.img_git:hover{
     filter: brightness(0.5);
 
 }
 
-a .img_projects .img_hackerhank:hover{
+.img_hackerhank:hover{
     filter: brightness(0.5);
 }
 
@@ -408,25 +414,27 @@ a .img_projects .img_hackerhank:hover{
 }
 
 .habilits{
-    background-color: #B3B3B3;
+    background-color: #dddddd;
     width: 100vw;
     height: 100%;
     display: flex;
+    align-items: center;
+    padding: 0px 0px 65px 0px;
 }
 
 .progress{
     display: flex;
     width: 50%;
-    padding: 44px 0px 28px 0px;
+    padding: 98px 0px 28px 0px;
     flex-direction: column;
     flex-wrap: nowrap;
     align-items: center;
 }
 
 .habilit_text{
-    width: 43%;
-    padding: 27px 0px 20px 20px;
-    float: right; 
+    width: 40%;
+    padding: 0px 0px 0px 96px;
+    float: right;
     text-align: center;
 }
 
@@ -473,7 +481,7 @@ a .img_projects .img_hackerhank:hover{
 
 .progress_2{
     position: absolute;
-    width: 50%;
+    width: 20%;
     background: linear-gradient(267deg, rgba(36,62,203,1) 0%, rgba(103,12,174,1) 91%);
     height: 35px;
     border-radius: 30px;
@@ -483,6 +491,31 @@ a .img_projects .img_hackerhank:hover{
     align-content: center;
     justify-content: flex-start;
     align-items: center;
+}
+
+.html{
+    width: 42%!important;
+}
+.css3{
+    width: 27%!important;
+}
+.js{
+    width: 30%!important;
+}
+.sql{
+    width: 13%!important;
+}
+.java{
+    width: 25%!important;
+}
+.python{
+    width: 18%!important;
+}
+.flutter{
+    width: 0%!important;
+}
+.reactjs{
+    width: 0%!important;
 }
 
 .progress_1 p{
@@ -507,11 +540,11 @@ a .img_projects .img_hackerhank:hover{
 
 /*EXPERIENCES*/
 .experiences{
-    background-color:#B3B3B3;
+    background-color: #B3B3B3;
     width: 100vw;
-    height: 100%; 
+    height: 100%;
     display: flex;
-    padding: 34px;
+    padding: 65px 34PX;
 }
 
 .works{
@@ -539,9 +572,9 @@ a .img_projects .img_hackerhank:hover{
     height: 100%;
     width: 100vw;
     background-color: rgba(18, 18, 18, 1);
-    color:rgba(255, 255, 255, 1);
+    color: rgba(255, 255, 255, 1);
     text-align: center;
-    padding: 45px;
+    padding: 90px 50PX;
 }
 
 .aboutMe h2{
