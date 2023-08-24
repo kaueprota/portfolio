@@ -11,10 +11,10 @@
 <body>
     <nav id="nav"> 
         <ul id="menu_desktop">
-            <li><a href="#" style="color:#243ECB;">Projects</a></li>
-            <li><a href="#">Habilits</a></li>
-            <li><a href="#">Experiences</a></li>
-            <li><a href="#">About me</a></li>
+            <li><a href="#projects" style="color:#243ECB;">Projects</a></li>
+            <li><a href="#habilits">Habilits</a></li>
+            <li><a href="#experiences">Experiences</a></li>
+            <li><a href="#aboutMe">About me</a></li>
         </ul>
 
         <ul class="menu_mobile">
@@ -32,25 +32,28 @@
     <header>
         <div class="titulo">
             <h2>Kauê Prota</h2>
-            <h3>Estudante de T.I</h3>
+            <h3>Desenvolvedor WEB</h3>
         </div>
             <div class="img_person">
                 <div class="img"></div>
             </div><!--img_person-->
     </header>
 
-    <div class="projects">
+    <div id="projects">
         <div class="box_projects">
-    <a href="http://eletronados.com.br" target="_blank">
+    <a href="https://www.orunion.org/" target="_blank">
             <div class="project1">
                 <div class="filter_project">
-                    <h2>ELETRONADOS</h2>
+                    <h2>ORUNION</h2>
                     <h3>projeto web</h3>
                 </div>    
                 <div class="img_project1"></div>
             </div>
-            <div class="project2">
-               <div class="filter_project"></div>
+            <div class="project1">
+               <div class="filter_project">
+                    <h2>Pokedex</h2>
+                    <h3>projeto web</h3>
+               </div>
             </div>
             <div class="project3">
                 <div class="filter_project"></div>
@@ -64,9 +67,9 @@
 
             <div class="box_title" data-anime="right">
                 <h2>Projects</h2>
-                <p>Front-end, back-end, web design não são problemas de aprendizagem para mim! Estou em crescimento EXPONENCIAL. Com uma busca incesssante por conhecimento, estou aprendendo Python para  projetos de automação e Flutter para projetos mobile. Sou um "programador filhote",  porém já estou criando pequenos projetos.
+                <p>Front-end, back-end, web design não são problemas de aprendizagem para mim! Estou em crescimento EXPONENCIAL. Com uma busca incesssante por conhecimento, estou aprendendo ReactJS para  projetos mais eficientes e Kotlin para projetos mobile. Sou um "programador filhote",  porém já estou criando pequenos projetos.
                     Ah... Caso se pergunte, LÓGICA é o mais importante para mim, por isso deixo aqui o meu <a href="#">HackerHank</a> para que veja como estou evoluindo!
-                    <br><br><span>*Clique em cada projeto para aceesar o PDF explicativo</span>
+                    <!--<br><br><span>*Clique em cada projeto para aceesar o PDF explicativo</span>-->
                 </p>
         
             <div class="img_projects">
@@ -78,7 +81,7 @@
         </div><!--container_projects-->
     </div><!--projects-->
 
-    <div class="habilits">
+    <div id="habilits">
         <div class="progress">
 
             <div class="container_slide">
@@ -132,26 +135,6 @@
             </div>
 
             <div class="container_slide">
-                <p class="title_progress">PYTHON</p>
-                <div class="progress_1">
-                    <P>SÊNIOR</P>
-                    <div class="progress_2 python">
-                        <P>ESTAGIÁRIO</P>
-                    </div>
-                </div>
-            </div>
-
-            <div class="container_slide">
-                <p class="title_progress">FLUTTER</p>
-                <div class="progress_1">
-                    <P>SÊNIOR</P>
-                    <div class="progress_2 flutter">
-                        <P>ESTAGIÁRIO</P>
-                    </div>
-                </div>
-            </div>
-
-            <div class="container_slide">
                 <p class="title_progress">REACTJS</p>
                 <div class="progress_1">
                     <P>SÊNIOR</P>
@@ -164,23 +147,21 @@
 
         <div class="habilit_text" data-anime="right">
             <h2>Skills</h2>
-            <p> 1º) Posso <b>desenvolver um CRUD utilizando Java.</b> *Observe meus projetos.
+            <p> 1º) Posso <b>desenvolver um CRUD utilizando Java com Spring Boot.</b> *Observe meus projetos.
             </br></br>
-                2º) <b>Desenvolver landing pages</b>.
+                2º) <b>Desenvolver Front-end com ReactJs</b>.
             </br></br>
-                3º) Consigo <b>criar a identidade visual de uma empresa</b> com base em seus valores e regras de negócio. Acesse meu <a href="#">Behance</a> para mais detalhes.
+                3º) Consigo <b>criar a identidade visual de uma empresa</b> com base em seus valores e regras de negócio. Acesse meu <a href="https://www.behance.net/kaueprota">Behance</a> para mais detalhes.
             </br></br>
-                4º) <b>Editar vídeos e imagens</b> com ferramentas do pacote Adobe - Tenho um canal no YouTube.
+                4º) <b>Autodidata</b> é meu sobrenome. 80% de todo conhecimento que adquiro provém de pesquisas pela internet e de livros.
             </br></br>
-                5º) <b>Autodidata</b> é meu sobrenome. 80% de todo conhecimento que adquiro provém de pesquisas pela internet e de livros.
+                5º) Tenho <b>inglês intermediário</b>.
             </br></br>
-                6º) Tenho <b>inglês intermediário</b>.
-            </br></br>
-                7º) Gosto de <b>trabalhar em grupo</b>.
+                6º) <b>trabalhar em grupo</b>.
                                 
         </div>
     </div>
-    <div class="experiences">
+    <div id="experiences">
         <div class="works" data-anime="left">
             <h2>JOBS</h2>
             <div class="descicao">
@@ -201,12 +182,7 @@
                 </br>
                 
             </div>
-            <div class="descicao">
-                <h3>Técnico em reparo de celulares e computadores (informal) na Assistência do Celular |</h3>
-                <p> 20 set, 2022 - atualmente</p>
-                </br>
-                
-            </div>
+            
         </div>
         <div class="academic" data-anime="right">
             <h2>ACADEMIC</h2>
@@ -226,10 +202,13 @@
         </div>
     </div> 
 
-    <div class="aboutMe">
+    <div id="aboutMe">
         <h2>ABOUT ME</h2>
-        <p>Passo meus dias, tomando café  (sem açúcar, por favor); ouvindo música e tocando meu violino; tirando fotos com minha DSLR; lendo livros de auto ajuda; estudando tecnologias; empreendendo; investindo em criptomoedas; curtindo minha família. </br>
-            Detenho uma enorme tara por conhecimento e aprendizado, por isso vou viajar o mundo e influenciar o mundo para evoluir. Tenho um canal no <a href="https://www.youtube.com/channel/UCz9UtdDxl4vp5raXqlTFmuQ" target="_blank">YouTube</a> que ensino e incentivo as pessoas através de livros, vivências e testes sociais. E, posso dizer que eu sou uma pessoa especial (não de saúde...Amém)!</br>No ramo profissional, sou extremamente dedicado e não tem um dia que eu não haja a favor da EVOLUÇÃO - é isso que me faz me sentir vivo. </p>
+        <p>Passo meus dias saboreando café, imerso em melodias enquanto toco meu violino, capturando momentos com minha DSLR, mergulhando em livros de autoajuda, explorando novas tecnologias, empreendendo e investindo em criptomoedas. Valorizo cada momento ao lado da minha família.<br><br>
+
+            Sou apaixonado por conhecimento e aprendizado. Esse amor me impulsiona a viajar pelo mundo, buscando não apenas absorver, mas também influenciar positivamente as pessoas ao meu redor. Mantenho um canal no YouTube onde compartilho ensinamentos, experiências e realizo testes sociais. Posso afirmar com confiança que tenho uma essência única, e agradeço por minha saúde.
+            <br><br>
+            Profissionalmente, sou extremamente dedicado. Não há um único dia em que eu não trabalhe em prol da evolução, pois é essa paixão que me mantém vivo e motivado.</p>
     </div>
 
     <footer>

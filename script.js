@@ -65,6 +65,8 @@ window.onload = function(){
     }
     
     animeScroll()    
+
+    
 }
 
 

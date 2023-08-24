@@ -34,7 +34,7 @@
         font-size: 24px;
     }
 
-    .habilits {
+    #habilits {
         display: flex;
         flex-direction: column-reverse;
         align-items: center;
@@ -100,7 +100,7 @@
       
     }
 
-    .aboutMe p{
+    #aboutMe p{
         padding: 0px 50px 0px 50px;
         font-size: 15px;
     }
@@ -109,7 +109,7 @@
 
 @media screen and (max-width:600px){
 
-    .projects {
+    #projects {
         flex-wrap: wrap;
         flex-direction: column-reverse;
     }
@@ -133,7 +133,7 @@
       
     }
 
-    .experiences {
+    #experiences {
         display: flex;
         flex-direction: column;
     }
@@ -148,7 +148,7 @@
         padding: 10px;
     }
 
-    .aboutMe p{
+    #aboutMe p{
         padding: 0px 8px 0px 8px;
         font-size: 14px;
     }
@@ -242,11 +242,11 @@
         font-size: 9px;
     }
 
-    .aboutMe h2{
+    #aboutMe h2{
         font-size: 32px;
     }
 
-    .aboutMe p{
+    #aboutMe p{
         padding: 0px 2px 0px 2px;
         font-size: 12px;
     }

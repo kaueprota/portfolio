@@ -168,7 +168,7 @@ header .img{
     transition: 0.5s;
 }
 
-.projects{
+#projects{
     background-color: rgba(18, 18, 18, 1);
     width: 100vw;
     height: 100%;
@@ -262,7 +262,7 @@ header .img{
 
 
 .box_projects .project1 .img_project1{
-    background-image: url(./Imagens/Screenshot_3.png);
+    background-image: url(./Imagens/Screenshot_2.png);
     width: 100%;
     height: 100%;
     background-size: cover;
@@ -413,7 +413,7 @@ header .img{
     border-radius: 30px;
 }
 
-.habilits{
+#habilits{
     background-color: #dddddd;
     width: 100vw;
     height: 100%;
@@ -515,7 +515,7 @@ header .img{
     width: 0%!important;
 }
 .reactjs{
-    width: 0%!important;
+    width: 15%!important;
 }
 
 .progress_1 p{
@@ -539,7 +539,7 @@ header .img{
 }
 
 /*EXPERIENCES*/
-.experiences{
+#experiences{
     background-color: #B3B3B3;
     width: 100vw;
     height: 100%;
@@ -552,7 +552,7 @@ header .img{
     padding: 50px;
 }
 
-.experiences h2{
+#experiences h2{
     margin-bottom: 18px
 }
 
@@ -568,7 +568,7 @@ header .img{
 
 /*ABOUT ME*/
 
-.aboutMe{
+#aboutMe{
     height: 100%;
     width: 100vw;
     background-color: rgba(18, 18, 18, 1);
@@ -577,12 +577,12 @@ header .img{
     padding: 90px 50PX;
 }
 
-.aboutMe h2{
+#aboutMe h2{
     font-size: 40px;
     padding-bottom: 10px;
 }
 
-.aboutMe p{
+#aboutMe p{
     padding: 0px 76px 0px 76px;
     font-size: 17px;
 }
